@@ -1,7 +1,5 @@
 import org.jsoup.Jsoup;
 
-import java.net.URL;
-
 class Scrap {
     String title;
     String relativePath;
