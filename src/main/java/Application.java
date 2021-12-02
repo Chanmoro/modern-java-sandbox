@@ -40,6 +40,6 @@ public class Application {
         }));
 
         // print
-        scraps.forEach(s -> System.out.println(s));
+        scraps.forEach(System.out::println);
     }
 }
