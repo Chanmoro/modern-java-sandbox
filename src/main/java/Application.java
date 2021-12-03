@@ -1,24 +1,7 @@
 import org.jsoup.Jsoup;
 
-class Scrap {
-    String title;
-    String relativePath;
-    Boolean isOpen;
-
-    public Scrap(String title, String path, Boolean isOpen) {
-        this.title = title;
-        this.relativePath = path;
-        this.isOpen = isOpen;
-    }
-
-    @Override
-    public String toString() {
-        return "Scrap{" +
-                "title='" + title + '\'' +
-                ", path=" + relativePath +
-                ", isOpen=" + isOpen +
-                '}';
-    }
+record Scrap(String title, String relativePath, Boolean isOpen) {
+    // Scrap 1記事の情報を保持するクラス
 }
 
 public class Application {
